@@ -66,6 +66,21 @@
             />
 
 
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:text="Don't have an account? Sign up!"
+            android:textColor="#F7FAF9"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"
+            />
+
+
     </LinearLayout>
 
 

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.example.mpetk.taskme;"
+    android:background="#2dccc4"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo5"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                />
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/kreiranje_korisnika_ime"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/kreiranje_korisnika_prezime"
+                android:hint="Surname"
+                android:paddingLeft="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/kreiranje_korisnika_mail"
+                android:hint="E-mail"
+                android:paddingLeft="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/kreiranje_korisnika_username"
+                android:hint="Username"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/kreiranje_korisnika_pass"
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                />
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="Create user"
+                android:id="@+id/button_modify_user"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/zakrivljeno"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="#F7FAF9"
+
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
