@@ -94,7 +94,14 @@ public class Pitanje extends AppCompatActivity {
                         if (edt_pitanje.getText().toString().length() == 0) {
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
-
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
                     }
                 });
@@ -178,7 +185,14 @@ if (edt3.getVisibility() == View.VISIBLE)
                         if(edt_pitanje.getText().toString().length() == 0 ) {
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
-
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
                     }
                 });
@@ -262,7 +276,14 @@ if (edt3.getVisibility() == View.VISIBLE)
                         if(edt_pitanje.getText().toString().length() == 0 ) {
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
-
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
                     }
                 });
@@ -349,6 +370,14 @@ if (edt3.getVisibility() == View.VISIBLE)
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
 
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
                     }
                 });
@@ -437,6 +466,15 @@ if (edt3.getVisibility() == View.VISIBLE)
                         if(edt_pitanje.getText().toString().length() == 0 ) {
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
+
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
 
                     }
@@ -531,6 +569,15 @@ if (edt3.getVisibility() == View.VISIBLE)
                         if(edt_pitanje.getText().toString().length() == 0 ) {
                             text_pitanje.setText("Well, I guess you don't need to write the question...");
                         }
+
+                        //FB
+                        ShareButton fbShareButton = (ShareButton) findViewById(R.id.share_btn);
+                        ShareLinkContent content = new ShareLinkContent.Builder()
+                                .setContentUrl(Uri.parse("https://web.facebook.com/petko91"))
+                                .setContentTitle("YouDecide app")
+                                .setContentDescription("YouDecide app helped me decide. Try it now!")
+                                .build();
+                        fbShareButton.setShareContent(content);
 
 
                     }

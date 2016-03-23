@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -32,6 +33,19 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+        TextView reg = (TextView) findViewById(R.id.sign_up);
+
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(getApplicationContext(), Registracija.class);
+                startActivity(intent);
+            }
+        });
 
         //Initializing views
         editTextUser = (EditText) findViewById(R.id.editxt_username);
@@ -66,7 +80,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.LOGIN_URL+"login.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -91,6 +105,24 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                         }
                         else  if (response.trim().equalsIgnoreCase("2")) {
+                            //Creating a shared preference
+                            SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+
+                            //Creating editor to store values to shared preferences
+                            SharedPreferences.Editor editor;
+                            editor = sharedPreferences.edit();
+
+                            //Adding values to editor
+                            editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
+                            editor.putString(Config.IME_SHARED_PREF, username);
+
+                            //Saving values to editor
+                            editor.apply();
+
+                            //Starting profile activity
+                            Intent intent = new Intent(Login.this, AskOthers.class);
+                            startActivity(intent);
+                        } else  if (response.trim().equalsIgnoreCase("0")) {
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 

@@ -39,8 +39,9 @@ public class AskOthers extends AppCompatActivity {
         String us = sharedPreferences.getString(Config.IME_SHARED_PREF, "Not Available");
 
         //Showing the current logged in email to textview
-        textView.setText(us);
+        textView.setText("Hello " + us);
     }
+
 
     //Logout function
     private void logout() {
@@ -104,6 +105,5 @@ public class AskOthers extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 }
