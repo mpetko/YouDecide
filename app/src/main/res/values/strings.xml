@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">YouDecide</string>
+    <string name="facebook_app_id">1499707267004624</string>
+    <string name="share">Share</string>
 </resources>

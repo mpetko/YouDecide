@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="pitanje"
@@ -19,28 +19,44 @@
         android:layout_alignBaseline="@+id/text_odluka"
         android:layout_alignBottom="@+id/text_odluka"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="The decision is:"
         android:id="@+id/textView"
-        android:textColor="#696E6D"
+        android:textColor="#3F51B5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="THIS"
+        android:layout_height="match_parent"
+        android:text="ANSWER"
         android:id="@+id/text_odluka"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+
+        />
+
+        <com.facebook.share.widget.ShareButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/share" />
 
     </LinearLayout>
 
